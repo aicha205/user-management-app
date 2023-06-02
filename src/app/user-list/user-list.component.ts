@@ -1,8 +1,7 @@
 import { Component , EventEmitter, OnInit, Output} from '@angular/core';
 import { UserService } from '../services/user.service';
 import { userType } from '../types/users.type';
-import { environment } from 'src/environments/environment';
-
+import {Title} from "@angular/platform-browser";
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
@@ -13,7 +12,9 @@ export class UserListComponent implements OnInit {
   goToPage = new EventEmitter<number>();
   users: userType[] = [];
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,private titleService:Title) {
+    this.titleService.setTitle("Users");
+   }
   public getAllUsers(page:Number):void{
     this.userService.getUsers(page).subscribe(user=>{
       console.log(user);
