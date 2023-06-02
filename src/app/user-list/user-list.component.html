@@ -1,0 +1,27 @@
+<div class="content">
+  <div class="text-end mt-2 mb-2">
+    <a class="btn btn-secondary text-black"><i class="bi bi-plus-lg"></i>{{'USERLIST.BUTTONTITLE' | translate}}</a>
+  </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>{{'USERLIST.ID' | translate}}</th>
+            <th>{{'USERLIST.AVATAR' | translate}}</th>
+            <th>{{'USERLIST.LNAME' | translate}}</th>
+            <th>{{'USERLIST.FNAME' | translate}}</th>
+            <th>{{'USERLIST.ACTION' | translate}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td><img src="{{user.avatar}}" width="30px" height="30px" class="rounded-circle"></td> 
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>{{ user.email }}</td>
+            <td><button (click)="deleteUser(user.id)" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button></td>
+          </tr>
+        </tbody>
+    </table>
+    <app-pagination (pageChanged)="onPageChanged($event)"></app-pagination>
+</div>

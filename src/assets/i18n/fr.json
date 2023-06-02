@@ -1,0 +1,20 @@
+{
+    "HEADER" :{
+        "TITLE" : "Formation Angular"
+    },
+    "HOME":{
+        "TITLE" :"Bienvenue dans cette application de test"
+    },
+    "SIDENAV" :{
+        "HOME":"Accueil",
+        "MANAGEU":"Gérer utilisateurs"
+    },
+    "USERLIST":{
+        "BUTTONTITLE":"Ajouter un utilisateur",
+        "ID": "ID",
+        "FNAME":"Prénom",
+        "LNAME" :"Nom de famille",
+        "AVATAR":"Avatar",
+        "ACTION":"Action"
+    }
+}

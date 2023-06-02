@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/angular-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      {{'HEADER.TITLE' | translate }}
+    </a>
+    <div class="justify-content-end pe-3">
+        <ng-select bindLabel="name"
+                bindValue="id"
+                [(ngModel)]="selectedLanguage"
+                (change)="changeLanguage()">
+                <ng-option [value]="item.name" *ngFor="let item of languages">
+                    <img src="./assets/{{item.image}}" width="20px" height="20px"/>
+                    {{item.name}}
+                </ng-option>
+    </ng-select>
+    </div>
+  </nav>

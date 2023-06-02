@@ -1,0 +1,15 @@
+<nav>
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <button class="page-link" (click)="previousPage()" [disabled]="currentPage===1" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </button>
+        </li>
+        <li class="page-item"><button class="page-link"><span>{{currentPage}}</span></button></li>
+        <li class="page-item">
+          <button class="page-link" (click)="nextPage()" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </button>
+        </li>
+      </ul>
+</nav>

@@ -1,0 +1,20 @@
+{
+    "HEADER" :{
+        "TITLE" : "Angular training"
+    },
+    "HOME":{
+        "TITLE" :"Welcome to this test application"
+    },
+    "SIDENAV" :{
+        "HOME":"Home",
+        "MANAGEU":"Manage users"
+    },
+    "USERLIST":{
+        "BUTTONTITLE":"Add a user",
+        "ID": "ID",
+        "FNAME":"First Name",
+        "LNAME" :"Last Name",
+        "AVATAR":"Avatar",
+        "ACTION":"Action"
+    }
+}
