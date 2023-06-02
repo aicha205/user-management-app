@@ -10,5 +10,5 @@ export class AppComponent {
     translate.setDefaultLang('en');
   }
   
-  title = 'formation-tp2';
+  title = 'user-management-app';
 }
